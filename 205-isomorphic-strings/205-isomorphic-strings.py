@@ -3,9 +3,7 @@ class Solution:
         s_map={}
         t_map={}
         for i in range(len(s)):
-            if (s[i] in s_map and s_map[s[i]]!=t[i]):
-                return False
-            if (t[i] in t_map and t_map[t[i]]!=s[i]):
+            if ((s[i] in s_map and s_map[s[i]]!=t[i]) or (t[i] in t_map and t_map[t[i]]!=s[i])):
                 return False
             if (s[i] not in s_map and t[i] not in t_map):
                 s_map[s[i]]=t[i]
