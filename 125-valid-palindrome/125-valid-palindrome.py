@@ -7,9 +7,8 @@ class Solution:
                 i+=1
                 pass
             else:
-                s=s.replace(s[i],"")
-            
-        s=s.replace(" ","")
+                s=s.replace(s[i],"")    
+        # s=s.replace(" ","")
         if(s==s[::-1]):
             return True
         return False
