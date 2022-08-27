@@ -14,7 +14,7 @@ class Solution:
             elif(el==")" and que[-1]=="(" ):
                 que.pop()
                 que.append(1)
-            elif(el==")"):
+            else:
                 inside=0
                 while(que[-1]!="("):
                     inside+=que.pop()
